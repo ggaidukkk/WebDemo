@@ -1,0 +1,34 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  vertical-align: middle;
+  margin-top: 19px;
+  margin-bottom: 19px;
+}
+.header__merge {
+  display: flex;
+}
+.header__menu {
+}
+.header__logo {
+  // margin-left: 20px;
+}
+.header__logo-img {
+  width: 100%;
+  max-width: 150px;
+}
+.header__basket {
+  margin-right: 13px;
+}
+.header__search {
+}
+.header__search > svg {
+  fill: #69727d;
+  color: #69727d;
+}
+.header__basket > svg {
+    fill: #69727d;
+    color: #69727d;
+  }
