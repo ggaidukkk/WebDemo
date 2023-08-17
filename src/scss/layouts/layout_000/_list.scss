@@ -1,0 +1,91 @@
+.list {
+  margin-top: 110px;
+}
+.list__title {
+  align-items: center;
+  text-align: center;
+  padding: 0 15px;
+}
+.list__products {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 30px;
+  padding: 0 12px;
+  margin-top: 75px;
+}
+
+.list__products-each {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.list__product-title {
+  color: rgb(44, 55, 34);
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22.4px;
+  outline-color: rgb(44, 55, 34);
+  text-decoration: none;
+}
+.list__price {
+  margin-top: 5px;
+}
+.list__reduce-price {
+  color: rgb(166, 173, 159);
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19.6px;
+}
+.list__new-price {
+  color: rgb(182, 102, 80);
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19.6px;
+}
+.mod {
+  color: rgb(108, 120, 99);
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19.6px;
+  margin-top: 5px;
+}
+
+.list__image {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.sale {
+  position: relative;
+}
+
+.onsale {
+  background-color: rgb(182, 102, 80);
+  border-radius: 50%;
+  color: rgb(255, 255, 255);
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  left: 17px;
+  line-height: 50px;
+  position: absolute;
+  text-align: center;
+  top: 15px;
+  width: 50px;
+}
+
+.list-btn{
+    margin-top: 50px;
+    width: 200px;
+    margin-bottom: 100px;
+}
+.list-text{
+    padding: 15px 0px;
+
+}
