@@ -1,0 +1,40 @@
+.questions {
+  background-color: #586d43;
+  text-align: center;
+  padding-top: 40px;
+}
+.questions__title {
+  color: rgb(255, 255, 255);
+  font-family: "Alegreya SC", sans-serif;
+  font-size: 38px;
+  font-weight: 400;
+  line-height: 41.799999px;
+}
+.questions__hotline-merged {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.questions__hotline-merged > svg {
+  fill: #ffffff;
+  color: #ffffff;
+  width: 24px;
+  height: 24px;
+}
+.questions__hotline-title {
+  color: rgb(255, 255, 255);
+  font-family: Inter, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 18px;
+  margin-left: 10px;
+}
+.questions__hotline-num {
+  color: rgb(255, 255, 255);
+  font-family: Inter, sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 24px;
+  margin-left: 10px;
+}
