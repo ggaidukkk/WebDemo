@@ -79,13 +79,39 @@
   top: 15px;
   width: 50px;
 }
-
-.list-btn{
-    margin-top: 50px;
-    width: 200px;
-    margin-bottom: 100px;
+.list__button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  vertical-align: middle;
+  background-color: #586d43;
+  max-width: 120px;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
 }
-.list-text{
-    padding: 15px 0px;
+.list__button-add {
+  color: white;
+  margin: 10px;
+  order: 1;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: Inter, sans-serif;
+}
+.list__button > svg {
+  width: 16px;
+  height: 16px;
+  fill: white;
+  color: white;
+  order: 0;
+  margin-left: 10px;
+}
 
+.list-btn {
+  margin-top: 50px;
+  width: 200px;
+  margin-bottom: 100px;
+}
+.list-text {
+  padding: 15px 0px;
 }

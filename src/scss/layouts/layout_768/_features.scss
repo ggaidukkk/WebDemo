@@ -1,0 +1,36 @@
+.features {
+  margin-top: 120px;
+}
+
+.features__title {
+  font-weight: 400;
+}
+.each-title{
+  font-size: 30px;
+}
+
+.features__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.features__wrapper-each {
+  padding: 0 20px;
+}
+.features__button {
+  border-color: #586d43;
+  border-style: solid;
+  border-width: 1px;
+  margin: 0 auto;
+  width: 75%; //
+  max-width: 290px;//
+  text-align: center;
+  margin-top: 60px;
+
+}
+.features__button-text{
+  color:#586d43;
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  font-size: 18px; //
+  padding: 20px 15px;
+}
