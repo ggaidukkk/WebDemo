@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -119,10 +120,10 @@
     <!--------------- header --------------->
 
     <div class="product">
-      <div class="product__merge">
+      <div class="product__merge" id="btn-head">
         <h2 class="main-title">Seven Vital</h2>
         <h4 class="title">Premium CBD Products</h4>
-        <a href="" class="btn">View popular products</a>
+        <a href="#popular-products" class="btn">View popular products</a>
       </div>
       <div class="product__points">
         <div class="product__each-point">
@@ -471,10 +472,12 @@
         </div>
       </div>
 
-      <div class="features__button">
-        <button type="button" class="features__button-text">
+      <div class="features__button" id="btn-feat">
+        <a href="#popular-products">
+        <button type="button" class="features__button-text" href="#popular-products">
           Browse popular products
         </button>
+      </a>
       </div>
     </div>
     <!------------------- features -------------------->
@@ -482,25 +485,69 @@
 
 
     <div class="color-slider">
-      <div class="slider">
-        <svg class="svg-slider-first" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40"><path fill="none" d="M0 0h24v24H0z"></path><path d="M10.828 12l4.95 4.95-1.414 1.414L8 12l6.364-6.364 1.414 1.414z"></path></svg>
-        <svg class="svg-slider-second" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40"><path fill="none" d="M0 0h24v24H0z"></path><path d="M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z"></path></svg>
+      <div class="slider multiple-items">
         <div class="slider__first">
-        <div class="slider__image">
-          <img
+           <div class="slider__image">
+            <img
             class="slider__photo" alt="" src="https://the7.io/cbd/wp-content/uploads/sites/104/2021/06/sales0062.jpg"
-          />
+            />
+            </div>
+            <h5 class="slider__title">Alexa Blackwod</h5>
+            <p class="slider__descr">"I am impressed! Cras at ornare ex, quis fringilla tortor quam et tortor euismod, vel maximus metus tristique. Highly recommend!"</p>
+            <button type="button" class="slider__button">alexabw</button>
         </div>
-        <h5 class="slider__title">Alexa Blackwod</h5>
-        <p class="slider__descr">"I am impressed! Cras at ornare ex, quis fringilla tortor quam et tortor euismod, vel maximus metus tristique. Highly recommend!"</p>
-        <button type="button" class="slider__button">alexabw</button>
+
+        <div class="slider__first">
+            <div class="slider__image">
+             <img class="slider__photo" alt="" src="https://the7.io/cbd/wp-content/uploads/sites/104/2021/06/sales0041.jpg">
+             </div>
+             <h5 class="slider__title">Miriam J. Anderson</h5>
+            <p class="slider__descr">"Pellentesque condimentum velit tortor. Cras at ornare ex, quis fringilla tortor. Ut tempus metus dui, non tristique turpis euismod sed. Nunc fermentum quam et tortor euismod, vel maximus metus tristique."</p>
+            <button type="button" class="slider__button">mjanderson</button>
+       </div>
+
+       <div class="slider__first">
+        <div class="slider__image">
+         <img class="slider__photo" alt="" src="https://the7.io/cbd/wp-content/uploads/sites/104/2021/06/sales00202.jpg">
+        </div>
+         <h5 class="slider__title">Boris Brown</h5>
+        <p class="slider__descr">"Super fun quam et tortor euismod, vel ligula, sit amet lacinia justo cursus ac. Nulla sed elit faucibus, auctor mauris ac, fermentum velit. Quisque eget odio felis. Thanx!"</p>
+        <button type="button" class="slider__button">bb_brown</button>
       </div>
+
+      <div class="slider__first">
+        <div class="slider__image">
+         <img class="slider__photo" alt="" src="https://the7.io/cbd/wp-content/uploads/sites/104/2021/06/sales00222.jpg">
+        </div>
+         <h5 class="slider__title">Tiffany Swift</h5>
+        <p class="slider__descr">"Awesome! +10K visitors at ornare ex, quis fringilla! Quisque eget odio felis. Suspendisse quis nulla tincidunt, cursus tellus condimentum, consequat sapien at ornare ex, quis fringilla tortor."</p>
+        <button type="button" class="slider__button">tiffany_swift</button>
       </div>
+
+      <div class="slider__first">
+        <div class="slider__image">
+         <img class="slider__photo" alt="" src="https://the7.io/cbd/wp-content/uploads/sites/104/2021/06/sales00967.jpg">
+        </div>
+         <h5 class="slider__title">Jessica Washington</h5>
+        <p class="slider__descr">"Cool! Lorem quis fringilla tortor, auctor mauris fermentum velit. Quisque eget - odio tincidunt, cursus tellus condimentum quis fringilla tortor."</p>
+        <button type="button" class="slider__button">j_washington</button>
+      </div>
+
+      <div class="slider__first">
+        <div class="slider__image">
+         <img class="slider__photo" alt="" src="https://the7.io/cbd/wp-content/uploads/sites/104/2021/06/sales0060.jpg">
+        </div>
+         <h5 class="slider__title">Anna White</h5>
+        <p class="slider__descr">"Ut tempus metus dui, non tristique turpis euismod sed. Nunc fermentum quam et tortor euismod, vel maximus metus tristique. Cool!"</p>
+        <button type="button" class="slider__button">anna_wh</button>
+      </div>
+
+    </div>
     </div>
     <!-------------- slider -------------->
 
-    <div class="container">
-      <div class="list">
+    <div class="container" >
+      <div class="list" id="popular-products">
         <div class="list__title">
             <img
               decoding="async"
@@ -792,8 +839,7 @@
             />
             <h2 class="features__title new-one">New From Our Magazine</h2>
           </div>
-          <svg class="svg-news-first" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40"><path fill="none" d="M0 0h24v24H0z"></path><path d="M10.828 12l4.95 4.95-1.414 1.414L8 12l6.364-6.364 1.414 1.414z"></path></svg>
-          <svg class="svg-news-second" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40"><path fill="none" d="M0 0h24v24H0z"></path><path d="M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z"></path></svg>
+        <div class="autoplay">
         <div class="news__block">
           <div class="news__image">
           <img class="news-img" src="i/vim0094.jpg" alt="" srcset="">
@@ -802,6 +848,61 @@
           <p class="news__date">December 2, 2022</p>
           <button type="button" class="news__button">Read article</button>
         </div>
+
+        <div class="news__block">
+          <div class="news__image">
+          <img class="news-img" src="i/vim0096.webp" alt="" srcset="">
+          </div>
+          <p class="news__title">Organic farming: best modern practices</p>
+          <p class="news__date">December 2, 2022</p>
+          <button type="button" class="news__button">Read article</button>
+        </div>
+
+        <div class="news__block">
+          <div class="news__image">
+          <img class="news-img" src="i/vim0097.webp" alt="" srcset="">
+          </div>
+          <p class="news__title">Organic farming: best modern practices</p>
+          <p class="news__date">December 2, 2022</p>
+          <button type="button" class="news__button">Read article</button>
+        </div>
+
+        <div class="news__block">
+          <div class="news__image">
+          <img class="news-img" src="i/vim0095.webp" alt="" srcset="">
+          </div>
+          <p class="news__title">Organic farming: best modern practices</p>
+          <p class="news__date">December 2, 2022</p>
+          <button type="button" class="news__button">Read article</button>
+        </div>
+
+        <div class="news__block">
+          <div class="news__image">
+          <img class="news-img" src="https://the7.io/cbd/wp-content/uploads/sites/104/2022/12/vim0090.jpg" alt="" srcset="">
+          </div>
+          <p class="news__title">Organic farming: best modern practices</p>
+          <p class="news__date">December 2, 2022</p>
+          <button type="button" class="news__button">Read article</button>
+        </div>
+
+        <div class="news__block">
+          <div class="news__image">
+          <img class="news-img" src="https://the7.io/cbd/wp-content/uploads/sites/104/2022/12/vim0091.jpg" alt="" srcset="">
+          </div>
+          <p class="news__title">Organic farming: best modern practices</p>
+          <p class="news__date">December 2, 2022</p>
+          <button type="button" class="news__button">Read article</button>
+        </div>
+
+        <div class="news__block">
+          <div class="news__image">
+          <img class="news-img" src="i/vim0301.webp" alt="" srcset="">
+          </div>
+          <p class="news__title">Organic farming: best modern practices</p>
+          <p class="news__date">December 2, 2022</p>
+          <button type="button" class="news__button">Read article</button>
+        </div>
+      </div>
         </div>
       </div>
 
@@ -862,6 +963,7 @@
 
     <!--  JavaScript here -->
     <!-- <script src="js/app.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>

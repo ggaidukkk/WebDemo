@@ -8,29 +8,19 @@
     padding: 0 10px;
 }
 
-.svg-news-first {
-    position: absolute;
-    left: 0;
-    top: 300px;
-    fill: #a6ad9f;
-    color:#a6ad9f;
-}
-.svg-news-second {
-    position: absolute;
-    right: 0;
-    top: 300px;
-    fill: #a6ad9f;
-    color:#a6ad9f;
-}
+
 .news__block-title{
     margin-bottom: 80px;
 }
 .news__image {
+  width: 80%;
+  margin: 0 auto;
 }
 .news-img {
-  width: 80%;
+  width: 100%;
 }
 .news__block {
+ 
 }
 .news__title {
   color: #2c3722;
@@ -63,4 +53,32 @@
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 10px;
+}
+
+
+
+.slider {
+  position: relative;
+  padding: 0px 60px; // поля между стрелкой и краем слайдера
+}
+
+
+.slider .slick-arrow{
+  position: absolute;
+  top: 50%; // выравнивание по вертикали
+  margin: -15px 0 0 0; // корректировка вертикального выравнивания
+  z-index: 2; // стрелки сверху картинок
+  font-size: 0; // убираем надпись на дефолтной стрелке
+  width: 30px; // ширина стрелки
+  height: 30px; // высота стрелки
+}
+
+.slider .slick-arrow.slick-prev{
+  left: 0; // левая стрелка остается с левой стороны слайдера
+  background: url('../img/left-arrow.png') 0 0 / 100% no-repeat;
+}
+
+.slider .slick-arrow.slick-next{
+  right: 0; // правая стрелка переместилась справа от слайдера
+  background: url('../img/right-arrow.png') 0 0 / 100% no-repeat;
 }
