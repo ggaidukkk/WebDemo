@@ -1,36 +1,48 @@
-// console.log("TEST");
-
-$(document).ready(function(){
-  $('.multiple-items').slick({
-      infinite: true,
-      slidesToShow: 3,
-      slidesToScroll: 3,
-      arrows: false,
-      dots: true,
-      dotsClass: 'dots-style',
-      responsive: [{
-         breakpoint: 1025,
-         settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2,
-         }
-      }, {
-         breakpoint: 688,
-         settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-         }
-      }]
-   });
+$(document).ready(function() {
+  $('#svg2').hide();
+  let mobileMenu = $('.mobile-menu');
+  $('#menu-btn').click(function() {
+      $('#svg1').toggle();
+      $('#svg2').toggle();
+      mobileMenu.slideToggle();
+  });
 });
 
-$(document).ready(function(){
+
+$(document).ready(function () {
+  $(".multiple-items").slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    arrows: false,
+    dots: true,
+    dotsClass: "dots-style",
+    responsive: [
+      {
+        breakpoint: 1025,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        },
+      },
+      {
+        breakpoint: 688,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  });
+});
+
+$(document).ready(function () {
   function scrollToSection(selector, duration) {
-    $(selector).on("click", "a", function(e){
+    $(selector).on("click", "a", function (e) {
       e.preventDefault();
       const id = $(this).attr("href"),
         top = $(id).offset().top;
-      $("body, html").animate({scrollTop: top}, duration);
+      $("body, html").animate({ scrollTop: top }, duration);
     });
   }
 
@@ -38,49 +50,64 @@ $(document).ready(function(){
   scrollToSection("#btn-feat", 1500);
 });
 
-
-$('.autoplay').slick({
+$(".autoplay").slick({
   slidesToShow: 2,
-  arrows:false,
+  arrows: false,
   autoplay: true,
   slidesToScroll: 1,
   autoplaySpeed: 2000,
-  responsive: [{
-    breakpoint: 1300,
-    settings: {
-       slidesToShow: 2,
-       slidesToScroll: 2,
-    }
- }, {
-    breakpoint: 688,
-    settings: {
-       slidesToShow: 1,
-       slidesToScroll: 1,
-    }
- }]
+  responsive: [
+    {
+      breakpoint: 1300,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+      },
+    },
+    {
+      breakpoint: 688,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+  ],
 });
 
-
-$(function() {
+$(function () {
   // contact form animations
-  $('#contact').click(function() {
-    $('#contactForm').fadeToggle();
-    $('body').toggleClass('lock-scroll');
-  })
+  $("#contact").click(function () {
+    $("#contactForm").fadeToggle();
+    $("body").toggleClass("lock-scroll");
+  });
   $(document).mouseup(function (e) {
     var container = $("#contactForm");
 
-    if (!container.is(e.target) // if the target of the click isn't the container...
-        && container.has(e.target).length === 0) // ... nor a descendant of the container
-    {
-        container.fadeOut();
-        $('body').removeClass('lock-scroll');
+    if (
+      !container.is(e.target) && // if the target of the click isn't the container...
+      container.has(e.target).length === 0
+    ) {
+      // ... nor a descendant of the container
+      container.fadeOut();
+      $("body").removeClass("lock-scroll");
     }
   });
-  
 });
 
+$(function () {
+  $(".list__button").click(function () {
+    $(this).find(".list__button-add").text("View cart");
+  });
+});
 
+let cartItemCount = 0;
+
+$(function () {
+  $(".list__button").click(function () {
+    cartItemCount++;
+    $(".header__basket text").text(cartItemCount);
+  });
+});
 
 function initMobile() {
   console.log("is-mobile");

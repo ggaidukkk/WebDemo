@@ -46,8 +46,9 @@
 
     <div class="container">
       <div class="header">
-        <div class="header__menu">
+        <div class="header__menu" id="menu-btn">
           <svg
+            id="svg1"
             xmlns="http://www.w3.org/2000/svg"
             x="0px"
             y="0px"
@@ -59,7 +60,21 @@
               d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 Z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 Z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 Z"
             ></path>
           </svg>
+          <svg 
+          id="svg2"
+          xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 50 50">
+            <path d="M 9.15625 6.3125 L 6.3125 9.15625 L 22.15625 25 L 6.21875 40.96875 L 9.03125 43.78125 L 25 27.84375 L 40.9375 43.78125 L 43.78125 40.9375 L 27.84375 25 L 43.6875 9.15625 L 40.84375 6.3125 L 25 22.15625 Z"></path>
+            </svg>
         </div>
+      
+      <div class="mobile-menu">
+        <a class="mobile-menu-each" href="">Shop</a>
+        <a class="mobile-menu-each" href="">Account</a>
+        <a class="mobile-menu-each" href="">Magazine</a>
+        <a class="mobile-menu-each" href="">Contact</a>
+      </div>
+
+
 
       <div class="tablet-menu">
         <a class="tablet-menu-each" href="">Shop</a>
@@ -75,6 +90,7 @@
             alt=""
           />
         </div>
+
         <div class="header__merge">
           <div class="header__basket">
             <svg
@@ -95,6 +111,7 @@
                 }
               </style>
               <path class="st0" d="M0-1h24v24H0V-1z"></path>
+              <text x="12" y="18" font-size="13" text-anchor="middle" fill="gray">0</text>
               <path
                 d="M7,7V6c0-2.8,2.2-5,5-5s5,2.2,5,5v1h3c0.6,0,1,0.4,1,1v13c0,0.6-0.4,1-1,1H4c-0.6,0-1-0.4-1-1V8c0-0.6,0.4-1,1-1H7z M7,9H5 v11h14V9h-2l0,0h-2l0,0H9l0,0H7L7,9z M9,7h6V6c0-1.7-1.3-3-3-3S9,4.3,9,6V7z"
               ></path>
@@ -917,14 +934,13 @@
         <div class="que-button-wrapper" ><a href="javascript://" id="contact" class="que-btn">Contact us online<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"></path></svg></a></div>
       
                 
-          <div id="contactForm" class="blur-background">
+          <div id="contactForm">
             <h1>Keep in touch!</h1>
             <small>I'll get back to you as quickly as possible</small>
             
             <form action="#">
               <input placeholder="Name" type="text" required />
               <input placeholder="Email" type="email" required />
-              <!-- <input placeholder="Subject" type="text" required /> -->
               <textarea placeholder="Comment"></textarea>
               <input class="formBtn firstBtn" type="submit" />
               <input class="formBtn secondBtn" type="reset" />
@@ -932,11 +948,6 @@
           </div>
                 
                 
-      
-      
-      
-      
-      
       </div>
 
       <!------------------ questions ------------------>

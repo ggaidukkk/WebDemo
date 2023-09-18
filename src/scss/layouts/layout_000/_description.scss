@@ -15,7 +15,6 @@
   font-weight: 400;
   margin-top: 30px;
 }
-
 .description__text {
   margin-top: 70px;
   padding: 0 20px;
@@ -28,16 +27,13 @@
   text-align: center;
   line-height: 26px;
 }
-
 .description__points {
   margin-top: 35px;
 }
-
 .points__each-section {
   display: flex;
   align-items: center;
 }
-
 .points__each-section > svg {
   fill: #586d43;
   color: #586d43;
@@ -53,7 +49,6 @@
   margin-top: 10px;
   margin-bottom: 10px;
 }
-
 .description__images {
   max-width: 100%;
   display: grid;
@@ -63,7 +58,6 @@
   padding: 0 15px;
   margin-top: 40px;
 }
-
 .block-first {
   grid-column: 1 / span 10;
   grid-row: 1/5;
