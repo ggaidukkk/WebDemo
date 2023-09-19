@@ -8,17 +8,60 @@
   background-image: url(../../../i/flart.svg);
   background-repeat: no-repeat;
   background-position: bottom right;
-}
-.footer__image {
-  max-width: 200px;
-  margin: 0 auto;
-}
-.footer__image-img {
-  width: 100%;
-}
-.footer__social {
-  margin-top: 40px;
-  margin-right: 6px;
+
+  @include e(image) {
+    max-width: 200px;
+    margin: 0 auto;
+  }
+  @include e(image-img) {
+    width: 100%;
+  }
+  @include e(social) {
+    margin-top: 40px;
+    margin-right: 6px;
+  }
+  @include e(info) {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    margin-bottom: 50px;
+  }
+  @include e(info-title) {
+    color: rgb(255, 255, 255);
+    font-family: Alegreya, sans-serif;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 31.200001px;
+    margin-bottom: 25px;
+  }
+  @include e(info-contact) {
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    font-family: Inter, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22.4px;
+    margin-bottom: 10px;
+  }
+  @include e(newsletter-title) {
+    color: rgb(255, 255, 255);
+    font-family: Alegreya, sans-serif;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 31.200001px;
+    margin-bottom: 25px;
+    margin-top: 55px;
+  }
+  @include e(newsletter-text) {
+    color: rgb(255, 255, 255);
+    font-family: Inter, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22.4px;
+    text-align: center;
+    padding: 0 70px;
+  }
 }
 .footer__social > svg {
   fill: white;
@@ -31,41 +74,8 @@
   margin-left: 0px;
   margin: 0;
 }
-.footer__info {
-  display: flex;
-  flex-direction: column;
-  margin-top: 40px;
-  margin-bottom: 50px;
-}
-.footer__info-title {
-  color: rgb(255, 255, 255);
-  font-family: Alegreya, sans-serif;
-  font-size: 26px;
-  font-weight: 400;
-  line-height: 31.200001px;
-  margin-bottom: 25px;
-}
-.footer__info-contact {
-  text-decoration: none;
-  color: white;
-  font-weight: 400;
-  font-family: Inter, sans-serif;
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 22.4px;
-  margin-bottom: 10px;
-}
 .footer__info-contact:hover {
   color: rgb(182, 102, 80);
-}
-.footer__newsletter-title {
-  color: rgb(255, 255, 255);
-  font-family: Alegreya, sans-serif;
-  font-size: 26px;
-  font-weight: 400;
-  line-height: 31.200001px;
-  margin-bottom: 25px;
-  margin-top: 55px;
 }
 .input-email {
   background-color: rgb(255, 255, 255);
@@ -110,13 +120,4 @@
   max-width: 500px;
   width: 70%;
   margin-top: 10px;
-}
-.footer__newsletter-text {
-  color: rgb(255, 255, 255);
-  font-family: Inter, sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 22.4px;
-  text-align: center;
-  padding: 0 70px;
 }

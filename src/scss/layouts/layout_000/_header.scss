@@ -6,16 +6,17 @@
   vertical-align: middle;
   margin-top: 19px;
   margin-bottom: 19px;
-}
-.header__merge {
-  display: flex;
-}
-.header__logo-img {
-  width: 100%;
-  max-width: 150px;
-}
-.header__basket {
-  margin-right: 13px;
+
+  @include e(merge) {
+    display: flex;
+  }
+  @include e(logo-img) {
+    width: 100%;
+    max-width: 150px;
+  }
+  @include e(basket) {
+    margin-right: 13px;
+  }
 }
 .header__search > svg {
   fill: #69727d;

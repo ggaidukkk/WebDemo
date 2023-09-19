@@ -1,25 +1,43 @@
 .features {
   text-align: center;
   padding: 0 15px;
-}
-.feature_img {
-  width: 100px;
-  height: 22px;
-}
-.features__title {
-  color: rgb(44, 55, 34);
-  font-family: "Alegreya SC", sans-serif;
-  font-size: 38px;
-  font-weight: 400;
-  margin-top: 30px;
-}
-.feauters__text {
-  color: rgb(108, 120, 99);
+  @include e(title){
+    color: rgb(44, 55, 34);
+    font-family: "Alegreya SC", sans-serif;
+    font-size: 38px;
+    font-weight: 400;
+    margin-top: 30px;
+  }
+  @include e(text){
+    color: rgb(108, 120, 99);
   font-family: Inter, sans-serif;
   font-size: 18px;
   font-weight: 400;
   text-align: center;
   line-height: 26px;
+  }
+  @include e(button){
+    border-color: #586d43;
+    border-style: solid;
+    border-width: 1px;
+    margin: 0 auto;
+    width: 70%;
+    max-width: 240px;
+    text-align: center;
+    margin-top: 60px;
+  }
+  @include e(button-text){
+    color: #586d43;
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 20px 15px;
+    cursor: pointer;
+  }
+}
+.feature_img {
+  width: 100px;
+  height: 22px;
 }
 .features__wrapper-each {
   text-align: center;
@@ -47,22 +65,4 @@
   font-weight: 400;
   line-height: 25.6px;
   margin-top: 10px;
-}
-.features__button {
-  border-color: #586d43;
-  border-style: solid;
-  border-width: 1px;
-  margin: 0 auto;
-  width: 70%;
-  max-width: 240px;
-  text-align: center;
-  margin-top: 60px;
-}
-.features__button-text {
-  color: #586d43;
-  font-family: Inter, sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  padding: 20px 15px;
-  cursor: pointer;
 }

@@ -2,11 +2,7 @@
   justify-content: center;
   text-align: center;
   align-items: center;
-  // position: relative;
-  // width: 100%;
-  // overflow: hidden;
 }
-
 .dots-style {
   text-align: center;
   display: flex;
@@ -16,7 +12,6 @@
   padding-bottom: 30px;
   margin-right: 35px;
 }
-
 .dots-style button {
   background: #619c7377;
   border: none;
@@ -27,15 +22,9 @@
   margin: 5px;
   outline: none;
 }
-
 .dots-style li[class="slick-active"] button {
   background: #64794d;
 }
-
-
-
-
-
 .color-slider {
   background-color: #f3f4ef;
   margin-top: 80px;
