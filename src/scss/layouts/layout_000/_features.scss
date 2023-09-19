@@ -1,22 +1,14 @@
 .features {
   text-align: center;
   padding: 0 15px;
-  @include e(title){
+  @include e(title) {
     color: rgb(44, 55, 34);
     font-family: "Alegreya SC", sans-serif;
     font-size: 38px;
     font-weight: 400;
     margin-top: 30px;
   }
-  @include e(text){
-    color: rgb(108, 120, 99);
-  font-family: Inter, sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  text-align: center;
-  line-height: 26px;
-  }
-  @include e(button){
+  @include e(button) {
     border-color: #586d43;
     border-style: solid;
     border-width: 1px;
@@ -26,7 +18,7 @@
     text-align: center;
     margin-top: 60px;
   }
-  @include e(button-text){
+  @include e(button-text) {
     color: #586d43;
     font-family: Inter, sans-serif;
     font-weight: 400;
@@ -34,6 +26,14 @@
     padding: 20px 15px;
     cursor: pointer;
   }
+}
+.feauters__text{
+  color: rgb(108, 120, 99);
+  font-family: Inter, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 26px;
 }
 .feature_img {
   width: 100px;

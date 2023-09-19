@@ -1,14 +1,28 @@
-$(document).ready(function() {
-  $('#svg2').hide();
-  let mobileMenu = $('.mobile-menu');
-  $('#menu-btn').click(function() {
-      $('#svg1').toggle();
-      $('#svg2').toggle();
-      mobileMenu.slideToggle();
-  });
+//menu
+const menuButton = $(".menu-button");
+const overlayNavigation = $(".overlay-navigation");
+menuButton.on("click", handleMenu);
+function handleMenu(e) {
+  e.preventDefault();
+  overlayNavigation.toggleClass("visible");
+}
+
+//scroll
+$(document).ready(function () {
+  function scrollToSection(selector, duration) {
+    $(selector).on("click", "a", function (e) {
+      e.preventDefault();
+      const id = $(this).attr("href"),
+        top = $(id).offset().top;
+      $("body, html").animate({ scrollTop: top }, duration);
+    });
+  }
+
+  scrollToSection("#btn-head", 2500);
+  scrollToSection("#btn-feat", 1500);
 });
 
-
+//first slider
 $(document).ready(function () {
   $(".multiple-items").slick({
     infinite: true,
@@ -36,20 +50,7 @@ $(document).ready(function () {
   });
 });
 
-$(document).ready(function () {
-  function scrollToSection(selector, duration) {
-    $(selector).on("click", "a", function (e) {
-      e.preventDefault();
-      const id = $(this).attr("href"),
-        top = $(id).offset().top;
-      $("body, html").animate({ scrollTop: top }, duration);
-    });
-  }
-
-  scrollToSection("#btn-head", 2500);
-  scrollToSection("#btn-feat", 1500);
-});
-
+//second slider
 $(".autoplay").slick({
   slidesToShow: 2,
   arrows: false,
@@ -74,26 +75,7 @@ $(".autoplay").slick({
   ],
 });
 
-$(function () {
-  // contact form animations
-  $("#contact").click(function () {
-    $("#contactForm").fadeToggle();
-    $("body").toggleClass("lock-scroll");
-  });
-  $(document).mouseup(function (e) {
-    var container = $("#contactForm");
-
-    if (
-      !container.is(e.target) && // if the target of the click isn't the container...
-      container.has(e.target).length === 0
-    ) {
-      // ... nor a descendant of the container
-      container.fadeOut();
-      $("body").removeClass("lock-scroll");
-    }
-  });
-});
-
+//counter + button
 $(function () {
   $(".list__button").click(function () {
     $(this).find(".list__button-add").text("View cart");
@@ -101,13 +83,30 @@ $(function () {
 });
 
 let cartItemCount = 0;
-
 $(function () {
   $(".list__button").click(function () {
     cartItemCount++;
     $(".header__basket text").text(cartItemCount);
   });
 });
+
+//contact form
+$(function () {
+  $("#contact").click(function () {
+    $("#contactForm").fadeToggle();
+    $("body").toggleClass("lock-scroll");
+  });
+  $(document).mouseup(function (e) {
+    var container = $("#contactForm");
+
+    if (!container.is(e.target) && container.has(e.target).length === 0) {
+      container.fadeOut();
+      $("body").removeClass("lock-scroll");
+    }
+  });
+});
+
+////////////////////
 
 function initMobile() {
   console.log("is-mobile");
