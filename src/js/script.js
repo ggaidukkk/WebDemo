@@ -97,7 +97,7 @@ $(function () {
     $("body").toggleClass("lock-scroll");
   });
   $(document).mouseup(function (e) {
-    var container = $("#contactForm");
+    let container = $("#contactForm");
 
     if (!container.is(e.target) && container.has(e.target).length === 0) {
       container.fadeOut();
@@ -105,7 +105,6 @@ $(function () {
     }
   });
 });
-
 
 ////////////////////
 
